@@ -7,131 +7,157 @@
     <title>MeP Plan</title>
 </head>
 <style>
-    .card-projeto-cozinha{
+    .card-projeto-cozinha {
         background-image: url(https://fendimarcenariamoderna.com.br/wp-content/uploads/2025/08/portfolio-cozinha-124.webp);
     }
-    .card-projetos{
+
+    .card-projetos {
         width: 220px;
         height: 220px;
         background-size: contain;
         background-repeat: no-repeat;
     }
 </style>
+
 <body>
 
     <header>
+
         <figure>
-            <img src="images/logoMarcenaria.png" alt="" width="100">
+            <a href="index.html">
+                <img src="images/logoMarcenaria.png" alt="" width="100">
+            </a>
         </figure>
+
         <nav>
-            <a href="#quemSomos">Quem somos</a>
-            <a href="#serviços">Serviços</a>
-            <a href="#portfólio">Portfólio</a>
-            <a href="#orçamento">Orçamento</a>
+            <a href="#quemSomos">Quem somos</a> |
+            <a href="#serviços">Serviços</a> |
+            <a href="#portfólio">Portfólio</a> |
+            <a href="#orçamento">Orçamento</a> |
         </nav>
+
     </header>
 
-    <section>
-        <img src="" alt="" id="imagemFundoSection">
+    <section id="hero">
 
-        <h1>Marcenaria de alto padrão onde
-            cada detalhe é uma obra de arte</h1>
+        <h1>
+            Marcenaria de alto padrão onde
+            <span>cada detalhe é uma obra de arte</span>
+        </h1>
         <p>
             A classe e a elegância que seu ambiente merece com móveis produzidos em alta qualidade e sofisticação.
         </p>
 
-        <button id="projetos">
-            <span>Projetos</span>
-        </button>
+
+        <a href="#projetos">Projetos</a>
+
 
     </section>
 
     <main>
 
-        <div id="quemSomosImagem">
+        <section id="quemSomos">
+
             <figure>
                 <img src="https://fendimarcenariamoderna.com.br/wp-content/uploads/2025/08/quadro-fend.webp" alt=""
                     width="500">
             </figure>
-        </div>
 
-        <div id="quemSomosDescricao">
-            <h1>MeP Plan, marcenaria moderna</h1>
 
-            <p>
-                Acreditamos que um lar vai muito além de quatro paredes. É um refúgio, um palco para memórias e o mais
-                fiel reflexo de quem você é.
+            <div id="quemSomosDescricao">
 
-                A FEND! MARCENARIA MODERNA nasceu exatamente desta crença, impulsionada pelo desejo de seus fundadores
-                em aliar a paixão pela marcenaria, onde cada veio de madeira tem uma voz, com a tecnologia dos processos
-                de produção mais atuais.
+                <h1><span>MeP Plan</span>, marcenaria moderna</h1>
 
-                Para isso, utilizamos softwares e maquinário de última geração para garantir projetos perfeitos e
-                funcionais, com a realização fiel ao planejado, otimizando tempo e recursos.
-                Cada projeto é meticulosamente planejado por nossa equipe para que a estética e a função caminhem
-                juntas, em perfeita harmonia.
+                <hr>
 
-                É dessa união que nasce o nosso compromisso e o que há de mais precioso: peças com alma, design
-                atemporal e durabilidade excepcional.
+                <p>
+                    Acreditamos que um lar vai muito além de quatro paredes. É um refúgio, um palco para memórias e o
+                    mais
+                    fiel reflexo de quem você é.
+                </p>
 
-                Nossa missão é ir além da funcionalidade. É criar móveis que não apenas preenchem um espaço, mas que o
-                completam. Que não sejam apenas objetos, mas protagonistas que contam a sua história e evoluem com a sua
-                vida.
+                    <p>
+                        A FEND! MARCENARIA MODERNA nasceu exatamente desta crença, impulsionada pelo desejo de seus
+                        fundadores
+                        em aliar a paixão pela marcenaria, onde cada veio de madeira tem uma voz, com a tecnologia dos
+                        processos
+                        de produção mais atuais.
+                    </p>
 
-                Convidamos você a compartilhar seu sonho conosco. Juntos, vamos criar um espaço que é, em cada detalhe,
-                unicamente seu.
-            </p>
+                    <p>
+                        Para isso, utilizamos softwares e maquinário de última geração para garantir projetos perfeitos e
+                        funcionais, com a realização fiel ao planejado, otimizando tempo e recursos.
+                        Cada projeto é meticulosamente planejado por nossa equipe para que a estética e a função caminhem
+                        juntas, em perfeita harmonia.
+                    </p>
 
-            <button id="faleConosco">
-            <span>Fale com a gente!</span>
-            </button>
-        </div>
+                    É dessa união que nasce o nosso compromisso e o que há de mais precioso: peças com alma, design
+                    atemporal e durabilidade excepcional.
 
-        <section>
+                    Nossa missão é ir além da funcionalidade. É criar móveis que não apenas preenchem um espaço, mas que
+                    o
+                    completam. Que não sejam apenas objetos, mas protagonistas que contam a sua história e evoluem com a
+                    sua
+                    vida.
+
+                    Convidamos você a compartilhar seu sonho conosco. Juntos, vamos criar um espaço que é, em cada
+                    detalhe,
+                    unicamente seu.
+
+                <button id="faleConosco">
+                    <span>Fale com a gente!</span>
+                </button>
+            </div>
+
+        </section>
+
+        <section id="projetos">
             <h1>Nossos projetos</h1>
 
-            <section>
+            <section id="cards">
 
                 <div class="card-projetos card-projeto-cozinha">
-                <h1>Cozinha</h1>
-                <button>
-                    <span>Ver mais</span>
-                </button>
+                    <img src="" alt="icone">
+                    <h1>Cozinha</h1>
+                    <hr>
+                    <button>
+                        <span>Ver mais</span>
+                    </button>
                 </div>
 
                 <div class="card-projetos card-projeto-dormitorio">
-                <h1>Dormitório</h1>
-                <button>
-                    <span>Ver mais</span>
-                </button>
+                    <h1>Dormitório</h1>
+                    <button>
+                        <span>Ver mais</span>
+                    </button>
                 </div>
 
                 <div class="card-projetos card-projeto-sala">
-                <h1>Sala</h1>
-                <button>
-                    <span>Ver mais</span>
-                </button>
+                    <h1>Sala</h1>
+                    <button>
+                        <span>Ver mais</span>
+                    </button>
                 </div>
-                 
+
                 <div class="card-projetos card-projeto-banheiro">
-                <h1>Banheiro</h1>
-                <button>
-                    <span>Ver mais</span>
-                </button>
+                    <h1>Banheiro</h1>
+                    <button>
+                        <span>Ver mais</span>
+                    </button>
                 </div>
 
                 <div class="card-projetos card-projeto-varanda">
-                <h1>Varanda</h1>
-                <button>
-                    <span>Ver mais</span>
-                </button>
+                    <h1>Varanda</h1>
+                    <button>
+                        <span>Ver mais</span>
+                    </button>
                 </div>
 
                 <div class="card-projetos card-projeto-corporativo">
-                <h1>Corporativo</h1>
-                <button>
-                    <span>Ver mais</span>
-                </button>
+                    <h1>Corporativo</h1>
+                    <button>
+                        <span>Ver mais</span>
+                    </button>
                 </div>
 
             </section>
