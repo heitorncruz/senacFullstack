@@ -1,58 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            color: #ea4e60;
-            font-size: 96px;
-        }
-
-        #par1{
-            color: white;
-            background: #ea4e60;
-            font-size: 60px;
-            padding: 24px 110px;
-            border-radius: 26px;
-        }
-
-        p {
-            font-size: 48px;
-            font-weight:bold;
-        }
-
-        #caixa{
-            background: rgb(6, 1, 49);
-            color: #99afba;
-            width: 250px;
-            border-radius: 12px;
-        }
-        
-        #box-bolinha span{
-            display: inline-block;
-            background: orange;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-
-
-            }
-
-        
-
-    </style>
+    
 
 
 
@@ -60,21 +15,21 @@
 <body>
 
     
-    <h1>Propriedades e valores</h1>
+    <h1><span id="txtUm">Propriedades</span> e <span id="txtDois">valores</span></h1>
     <p id="par1">Propriedade: valor;</p>
     <p>Por exemplo: </p>
     
 
     <div id="caixa">
         <div id="box-bolinha">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span id="bolinhaUm"></span>
+            <span id="bolinhaDois"></span>
+            <span id="bolinhaTres"></span>
         </div>
 
         <ol>
-            <li>background: red;</li>
-            <li>color: white;</li>
+            <li>background: <span class="txtCorEstranha">red</span>;</li>
+            <li>color: <span class="txtCorEstranha">white</span>;</li>
         </ol>
     </div>
 
