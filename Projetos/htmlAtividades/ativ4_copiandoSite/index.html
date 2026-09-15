@@ -4,24 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
     <title>MeP Plan</title>
 </head>
-<style>
-    .card-projeto-cozinha {
-        background-image: url(https://fendimarcenariamoderna.com.br/wp-content/uploads/2025/08/portfolio-cozinha-124.webp);
-    }
-
-    .card-projetos {
-        width: 220px;
-        height: 220px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-</style>
 
 <body>
 
-    <header>
+    <header class="flex">
 
         <figure>
             <a href="index.html">
@@ -38,7 +28,7 @@
 
     </header>
 
-    <section id="hero">
+    <section id="hero" class="flex">
 
         <h1>
             Marcenaria de alto padrão onde
@@ -56,7 +46,7 @@
 
     <main>
 
-        <section id="quemSomos">
+        <section id="quemSomos" class="flex">
 
             <figure>
                 <img src="https://fendimarcenariamoderna.com.br/wp-content/uploads/2025/08/quadro-fend.webp" alt=""
@@ -76,48 +66,53 @@
                     fiel reflexo de quem você é.
                 </p>
 
-                    <p>
-                        A FEND! MARCENARIA MODERNA nasceu exatamente desta crença, impulsionada pelo desejo de seus
-                        fundadores
-                        em aliar a paixão pela marcenaria, onde cada veio de madeira tem uma voz, com a tecnologia dos
-                        processos
-                        de produção mais atuais.
-                    </p>
+                <p>
+                    A FEND! MARCENARIA MODERNA nasceu exatamente desta crença, impulsionada pelo desejo de seus
+                    fundadores
+                    em aliar a paixão pela marcenaria, onde cada veio de madeira tem uma voz, com a tecnologia dos
+                    processos
+                    de produção mais atuais.
+                </p>
 
-                    <p>
-                        Para isso, utilizamos softwares e maquinário de última geração para garantir projetos perfeitos e
-                        funcionais, com a realização fiel ao planejado, otimizando tempo e recursos.
-                        Cada projeto é meticulosamente planejado por nossa equipe para que a estética e a função caminhem
-                        juntas, em perfeita harmonia.
-                    </p>
+                <p>
+                    Para isso, utilizamos softwares e maquinário de última geração para garantir projetos perfeitos e
+                    funcionais, com a realização fiel ao planejado, otimizando tempo e recursos.
+                    Cada projeto é meticulosamente planejado por nossa equipe para que a estética e a função caminhem
+                    juntas, em perfeita harmonia.
+                </p>
 
+                <p>
                     É dessa união que nasce o nosso compromisso e o que há de mais precioso: peças com alma, design
                     atemporal e durabilidade excepcional.
+                </p>
 
+                <p>
                     Nossa missão é ir além da funcionalidade. É criar móveis que não apenas preenchem um espaço, mas que
                     o
                     completam. Que não sejam apenas objetos, mas protagonistas que contam a sua história e evoluem com a
                     sua
                     vida.
+                </p>
 
+                <p>
                     Convidamos você a compartilhar seu sonho conosco. Juntos, vamos criar um espaço que é, em cada
                     detalhe,
                     unicamente seu.
+                </p>
 
-                <button id="faleConosco">
-                    <span>Fale com a gente!</span>
-                </button>
+
+                <a href="#" id="faleConosco">Fale com a gente!</a>
+
             </div>
 
         </section>
 
-        <section id="projetos">
-            <h1>Nossos projetos</h1>
+        <section id="projetos" >
+            <h1 id="projetos-titulo" class="flex">Nossos projetos</h1>
 
-            <section id="cards">
+            <section class="flex flex-grid">
 
                 <div class="card-projetos card-projeto-cozinha">
-                    <img src="" alt="icone">
                     <h1>Cozinha</h1>
                     <hr>
                     <button>
@@ -127,6 +122,7 @@
 
                 <div class="card-projetos card-projeto-dormitorio">
                     <h1>Dormitório</h1>
+                    <hr>
                     <button>
                         <span>Ver mais</span>
                     </button>
@@ -134,6 +130,7 @@
 
                 <div class="card-projetos card-projeto-sala">
                     <h1>Sala</h1>
+                    <hr>
                     <button>
                         <span>Ver mais</span>
                     </button>
@@ -141,6 +138,7 @@
 
                 <div class="card-projetos card-projeto-banheiro">
                     <h1>Banheiro</h1>
+                    <hr>
                     <button>
                         <span>Ver mais</span>
                     </button>
@@ -148,6 +146,7 @@
 
                 <div class="card-projetos card-projeto-varanda">
                     <h1>Varanda</h1>
+                    <hr>
                     <button>
                         <span>Ver mais</span>
                     </button>
@@ -155,6 +154,7 @@
 
                 <div class="card-projetos card-projeto-corporativo">
                     <h1>Corporativo</h1>
+                    <hr>
                     <button>
                         <span>Ver mais</span>
                     </button>
@@ -166,7 +166,7 @@
 
     </main>
 
-    <footer>
+    <footer class="flex tamanho-footer">
 
         <div id="endereco-footer">
             <h1>Endereço</h1>
