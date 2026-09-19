@@ -336,7 +336,87 @@ section.portfolio .img-port:hover {
     opacity: 1;
 }
 
+/* Estilo do formulário de contato */
 
+section.formulario {
+    padding: 80px 4%;
+
+}
+
+section.formulario form {
+
+    margin: 40px auto 0;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    background: #242424;
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    color: #ffffff78;
+    resize: none;
+    max-height: 200px;
+
+}
+
+form .btn-enviar {
+    background-color: #00ff08;
+    width: 220px;
+    margin: 20px auto;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ff00;
+}
+
+/* Estilo do rodapé */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 5px #ffffff3b;
+}
+
+footer div .flex {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    margin: 0 100px;
+}
+
+footer div .borda {
+    margin: 10px 100px;
+    padding-top: 16px;
+    border-top: 1px solid #00ff08;
+}
+
+footer div .bi-envelope-fill{
+    color: #00ff08;
+}
+
+.borda a {
+    color: white;
+}
+
+div .borda {
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -371,6 +451,19 @@ section.portfolio .img-port:hover {
     }
     .btn-abrir-menu {
         display: block;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column-reverse;
+
+    }
+
+    h1.titulo {
+        background-color: #00ff08;
     }
 
 }
