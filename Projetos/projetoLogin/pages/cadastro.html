@@ -15,6 +15,9 @@ CADASTRO.HTML
  
     <!-- ================ LOGIN JS ========================= -->
     <script src="../assets/js/mostrarSenha.js" defer></script>
+    <script src="../assets/js/cadastro.js" defer></script>
+
+
  
     <title>Cadastro</title>
 </head>
@@ -38,7 +41,7 @@ CADASTRO.HTML
                     <i class="ri-user-3-line login__icon"></i>
  
                     <div class="login__box-input">
-                        <input type="email" id="cadastro-email" class="login__input" required placeholder="">
+                        <input type="email" id="cadastro-email" class="login__input" required placeholder="" autocomplete="true">
  
                         <label for="login-email" class="login__label">E-mail</label>
                     </div>
@@ -63,7 +66,7 @@ CADASTRO.HTML
                     <i class="ri-lock-2-line login__icon"></i>
  
                     <div class="login__box-input">
-                        <input type="password" id="cadastro-pass-confirm" class="login__input" required placeholder="">
+                        <input type="password" id="cadastro-pass-confirm" class="login__input" required placeholder="" minlength="6">
  
                         <label for="cadastro-pass-confirm" class="login__label">Repeat Password</label>
  
