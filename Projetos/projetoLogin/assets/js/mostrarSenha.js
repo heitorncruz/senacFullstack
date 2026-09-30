@@ -17,11 +17,9 @@ const showHidePassword = () => {
         }
     });
 
-};       
-
     const inputConfirm = document.getElementById("cadastro-pass-confirm");
     const iconEyeConfirm = document.getElementById("login-eye-confirm");
-
+    
     iconEyeConfirm.addEventListener("click", () => {
         if (inputConfirm.type === "password"){
             inputConfirm.type = "text";
@@ -33,10 +31,7 @@ const showHidePassword = () => {
             iconEyeConfirm.classList.add("ri-eye-off-line")
         }
     })
-
-
-
-
+};       
 
 
 showHidePassword();
