@@ -115,7 +115,7 @@ input[type="checkbox"]{
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
     background: #acabab4f;
-    color: rgb(39, 39, 39);
+    color: rgb(253, 253, 253);
     transition: all .4s;
     margin-bottom: 1.5rem;
 }
