@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="assets/css/login.css">
  
     <!-- ================ LOGIN JS ========================= -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
     <script src="assets/js/mostrarSenha.js" defer></script>
     <script src="assets/js/login.js" defer></script>
+    <script src="assets/js/firebase-config.js" defer></script>
  
     <title>Login</title>
 </head>
@@ -69,6 +73,11 @@
                 </div>
  
                 <button type="submit" class="login__button">login</button>
+
+                <button type="button" id="google-login" class="login__button">
+                    <i class="ri-google-fill"></i>
+                    Entrar com Google
+                </button>
  
                 <p class="login__register">
                     Don't have an account?
