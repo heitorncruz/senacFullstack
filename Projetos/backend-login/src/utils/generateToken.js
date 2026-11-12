@@ -4,7 +4,7 @@ require('dotenv').config();
 function generateToken(id) {
 
     return jwt.sign(
-        { id,  },
+        { id  },
         process.env.JWT_SECRET,
         { expiresIn: process.env.JWT_EXPIRES_IN },
         
@@ -14,5 +14,6 @@ function generateToken(id) {
 
 module.exports = generateToken;
 
-console.log("Token gerado: ", generateToken (2))
+// console.log("Token gerado: ", generateToken (2))
 
+ 

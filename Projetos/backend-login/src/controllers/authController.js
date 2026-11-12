@@ -1,24 +1,46 @@
 const bcrypt = require('bcryptjs');
-const database = require ('../config/database');
+const database = require('../config/database');
 const generateToken = require('../utils/generateToken')
 
 //Cadastrar
 
-const cadastrar = async (req, res) => {
+exports.cadastrar = async (req, res) => {
 
     const { nome, email, senha } = req.body
 
     if ( !nome || !email || !senha) return res.status(400).json({ msg: "Preencha todos os campos!!"});
 
-    console.log(req.body)
+    // Verifica se email já existe 
+    const [existe] = await database.query('SELECT id FROM usuarios WHERE email = ?', [email] );
+
+    if (existe.length > 0 ) return console.log("Email ja cadastrado");
+
+    // Criptografia da senha
+    const senhaHash = await bcrypt.hash(senha, 10);
+
+    // salva no banco
+
+    database.query('INSERT INTO usuarios (nome, email, senha) VALUE (?, ?, ?)', [nome, email, senhaHash])
+
+    console.log(senhaHash);
 };
 
 
 // exemplo de dados enviados do front end
-cadastrar ({
-    body: {
-        nome: "Heitor",
-        email: "heitor@gmail.com",
-        senha: "123456"
+
+this.cadastrar (
+    {
+        body: {
+            nome: "Heitor",
+            email: "1",
+            senha: "147"
+        }
+    },
+
+    {
+        status: codigo => ({ json: dados => console.log (codigo, dados) })
     }
-});
+
+
+);
+
