@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-const token = require('../utils/generateToken')
+// const token = require('../utils/generateToken')
 
-exports.login= (req, res, next) => {
+module.exports= (req, res, next) => {
 
     const token = req.headers.authorization;
     if (!token) return res.status(401).json({msg: 'sem token!'});
@@ -20,20 +20,20 @@ exports.login= (req, res, next) => {
     console.log("Token: ", token);
 };
 
-// Requisição simulada com o token gerado do arquivo generateToken. 
+// // Requisição simulada com o token gerado do arquivo generateToken. 
 
-const requisicaoTeste = {
-    headers: {
-        authorization: token(1)
-    }
-};
+// const requisicaoTeste = {
+//     headers: {
+//         authorization: token(1)
+//     }
+// };
 
-const respostaTeste = {
-    status: codigo => ({
-        json: dados => console.log('Resposta:', codigo, dados)
-    })
-};
+// const respostaTeste = {
+//     status: codigo => ({
+//         json: dados => console.log('Resposta:', codigo, dados)
+//     })
+// };
 
-const proximoPasso = () => console.log('Token válido. Id do Usuário: ', requisicaoTeste.usuarioId)
+// const proximoPasso = () => console.log('Token válido. Id do Usuário: ', requisicaoTeste.usuarioId)
 
-exports.login(requisicaoTeste, respostaTeste, proximoPasso)
+// exports.login(requisicaoTeste, respostaTeste, proximoPasso)
