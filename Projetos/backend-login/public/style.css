@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+ 
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+#card {
+    background: #fff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+ 
+h2 {
+    text-align: center;
+    color: #004A8D;
+    margin-bottom: 20px;
+}
+ 
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+ 
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #004A8D;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background: #002f5c;
+}
+ 
+.link {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 12px;
+}
+ 
+.link a {
+    color: #FF8200;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.hidden {
+    display: none;
+}
+ 
+#msg {
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+ 
+#msg.erro {
+    color: red;
+}
+ 
+#msg.sucesso {
+    color: green;
+}
+

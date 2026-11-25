@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <script src="script.js" defer></script>
+ 
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>Login - Backend SENAC</title>
+</head>
+<body>
+   
+    <div id="card">
+       
+        <!-- CADASTRO -->
+         <div id="cadastro">
+            <h2>Cadastro</h2>
+            <input id="nomeCad" placeholder="Nome">
+            <input id="emailCad" placeholder="Email">
+            <input id="senhaCad" type="password" placeholder="Senha min 6">
+            <button onclick="cadastrar()">Cadastrar</button>
+            <div class="link">Já tem conta? <a onclick="mostrar('login')">Login</a></div>
+        </div>
+ 
+        <!-- LOGIN -->
+        <div id="login" class="hidden">
+            <h2>Login</h2>
+            <input id="emailLog" placeholder="Email">
+            <input id="senhaLog" type="password" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+            <div class="link">Não tem conta? <a onclick="mostrar('cadastro')">Cadastrar</a></div>
+        </div>
+ 
+        <!-- LOGADO -->
+        <div id="logado" class="hidden">
+            <h2 id="bemVindo"></h2>
+            <p style="text-align:center;font-size:14px">Você está logado com token JWT válido!</p>
+            <button onclick="sair()" style="background:#c0392b">Sair</button>
+        </div>
+ 
+        <p id="msg"></p>
+ 
+    </div>
+</body>
+</html>
