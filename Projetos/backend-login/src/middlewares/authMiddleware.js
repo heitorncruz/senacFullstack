@@ -4,8 +4,10 @@ require('dotenv').config();
 
 module.exports= (req, res, next) => {
 
-    const token = req.headers.authorization;
-    if (!token) return res.status(401).json({msg: 'sem token!'});
+    const authorization = req.headers.authorization;
+    if (!authorization || !authorization.startsWith('Bearer')) return res.status(401).json({msg: 'sem token!'});
+
+    const token = authorization.slice(7)
 
     try {
 

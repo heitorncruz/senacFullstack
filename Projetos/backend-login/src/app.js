@@ -14,7 +14,7 @@ app.get('/', (req, res) => res.json({ msg: "Backend rodando na rota principal" }
 const authMiddleware = require('./middlewares/authMiddleware');
  
  
-app.get('/api/perfil', authMiddleware, (req, res) => res.json({ mgs: "Você está logado", id: req.usuarioId }));
+app.get('/api/perfil', authMiddleware, (req, res) => res.json({ msg: "Você está logado", id: req.usuarioId }));
  
  
 module.exports = app;
